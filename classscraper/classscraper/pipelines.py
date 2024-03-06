@@ -10,4 +10,14 @@ from itemadapter import ItemAdapter
 
 class ClassscraperPipeline:
     def process_item(self, item, spider):
+        
+        adapter = ItemAdapter(item)
+        description = adapter.get('description')
+        split_string = description.split('Course Prerequisite: ')
+        if len(split_string) == 2 :
+            temp = split_string[1].split('.')
+            adapter['prereq'] = temp[0]
+
+            del temp[0]
+            adapter['description'] = split_string[0] + ".".join(temp)
         return item

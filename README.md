@@ -4,6 +4,11 @@
 2. run scrapy crawl classspider
  - Here is the tutorial I followed for Scrapy: https://www.youtube.com/watch?v=mBoX_JCKZTE&t=2983s
 
+### Running scrapy
+in directory "classscraper/classscraper/spiders" run:
+scrapy crawl classspider
+scrapy crawl class spider -O classdata.csv *Saves all data into file*
+
 ## Dependencies
 Python 3.11.4
 pip 23.1.2
