@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .ht100{
+            height: 100px;
+        }
+        .ht200{
+            height: 200px;
+        }
+        .ht300{
+            height: 300px;
+        }
+        .ht500{
+            height: 500px;
+        }
+        .aqua{
+            background-color: aqua;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container box">
+        <div class="row ht100"> <!-- Navigation Bar -->
+            <div class="col-2 blue"></div>
+            <div class="col-10 aqua"></div>
+        </div>
+        <div class="row ht500"> <!-- Main Content -->
+            <div class="col green m-1"></div>
+            <div class="col blue m-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 aqua ht300"></div>
+            <div class="col-6 aqua ht300">
+                <div class="row-cols-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
