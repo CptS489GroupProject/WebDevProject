@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">     <!-- Logos -->
         <symbol id="check2" viewBox="0 0 16 16">
           <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
         </symbol>
@@ -28,7 +28,7 @@
           <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
         </symbol>
       </svg>
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">    <!-- Brightness Setting -->
         <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
           <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
           <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
@@ -74,6 +74,32 @@
             </div>
           </div>
         <div class="row"> <!-- Main Content -->
+          <div class="row bg-light m-1 ms-0 rounded shadow pb-5 pt-5">  <!-- Option Menu -->
+            <div class="col d-inline-block">    <!-- Semester Option -->
+              <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Select Semester
+                </button>
+                <ul class="dropdown-menu">
+                  <li>Summer </li>
+                  <li>Fall 2024</li>
+                  <li>Spring 2025</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-inline-block">
+              <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Select Major
+                </button>
+                <ul class="dropdown-menu">
+                  <li>CPT_S </li>
+                  <li>English</li>
+                  <li>Accounting</li>
+                </ul>
+              </div>
+            </div>
+          </div> 
             <div class="col bg-light m-1 ms-0 rounded shadow pb-5 pt-5"></div>
             <div class="col bg-light m-1 me-0 rounded shadow pb-5 pt-5">
                 <div class="row ps-5">
@@ -83,16 +109,16 @@
                     <div class="col d-inline-block">Thursday</div>
                     <div class="col d-inline-block">Friday</div>
                 </div>
-                <div class="row ps-4">8</div>
-                <div class="row ps-4">9</div>
-                <div class="row ps-4">10</div>
-                <div class="row ps-4">11</div>
-                <div class="row ps-4">12</div>
-                <div class="row ps-4">1</div>
-                <div class="row ps-4">2</div>
-                <div class="row ps-4">3</div>
-                <div class="row ps-4">4</div>
-                <div class="row ps-4">5</div>
+                <div class="row ps-4 py-4 border-bottom">8</div>
+                <div class="row ps-4 py-4 border-bottom">9</div>
+                <div class="row ps-4 py-4 border-bottom">10</div>
+                <div class="row ps-4 py-4 border-bottom">11</div>
+                <div class="row ps-4 py-4 border-bottom">12</div>
+                <div class="row ps-4 py-4 border-bottom">1</div>
+                <div class="row ps-4 py-4 border-bottom">2</div>
+                <div class="row ps-4 py-4 border-bottom">3</div>
+                <div class="row ps-4 py-4 border-bottom">4</div>
+                <div class="row ps-4 py-4 border-bottom">5</div>
             </div>
         </div>
     </main>
